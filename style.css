@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.block1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.block1 > div {
+    width: 50%;
+}
+.block1 ul {
+    margin-top: -10px;
+}
+
+.block1 > div > img {
+    width: 100%;
+    /* aspect-ratio: 1/1; */
+    background-size: cover;
+    object-position: 20% 50px;
+    object-fit: cover;
+    max-height: 600px;
+}
+
+.block1_line {
+    width: 80px;
+    height: 3px;
+    background-color: black;
+    opacity: 0.5;
+    margin-top: 20px;
+}
+
+.block1 p {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
