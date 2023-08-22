@@ -23,7 +23,7 @@ body {
 
 .block1 > div > img {
     width: 100%;
-    /* aspect-ratio: 1/1; */
+    aspect-ratio: 1/1;
     background-size: cover;
     object-position: 20% 60%;
     object-fit: cover;
@@ -93,7 +93,7 @@ a {
     max-width: 700px;
     margin: auto;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .block4 > p {
@@ -111,14 +111,15 @@ a {
     text-align: center;
 }
 
-.block5 > button {
+.block5 > a > button {
     border: none;
     margin-top: 10px;
     height: 60px;
     border-radius: 10px;
+    width: 100%;
 }
 
-.block5 > button > img {
+.block5 > a > button > img {
     width: 30px;
     margin-right: 5px;
 }
@@ -130,4 +131,25 @@ a {
 .whatsapp {
     background-color: rgb(68, 197, 84);
     color: white;
+    font-size: 18px;
+}
+.number {
+    background-color: darkorchid;
+    color: white;
+}
+@media (max-width: 768px) {
+    .block1 {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .block1 > div {
+        width: 100%;
+    }
+    .block1 > div > h1 {
+        /* margin-top: 40px; */
+    }
+    .block1 > div > img {
+        margin-top: 40px;
+    }
 }
